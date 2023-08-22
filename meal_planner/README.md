@@ -34,3 +34,4 @@ Meal Planner supports Django and Django_Restframework
 - configure docker images
 - configure feature branch testing
 - configure multidev sites
+- jira integration
