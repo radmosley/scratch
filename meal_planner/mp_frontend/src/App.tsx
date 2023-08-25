@@ -1,15 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
-import '/components/NavBar/NavBar.css';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
-      <nav className="App-nav">
-      
-      </nav>
+      <NavBar></NavBar>
     </div>
   );
 }

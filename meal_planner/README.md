@@ -18,6 +18,10 @@ git pull
 git checkout -b mp-[feature name]
 ```
 ### Feature development
+Create branch:
+```
+git checkout -b mp-[feature name]
+```
 To checkin code for the first time:
 ```
 git push -u origin mp-[feature name]
