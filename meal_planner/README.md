@@ -18,6 +18,10 @@ git pull
 git checkout -b mp-[feature name]
 ```
 ### Feature development
+Create branch:
+```
+git checkout -b mp-[feature name]
+```
 To checkin code for the first time:
 ```
 git push -u origin mp-[feature name]
@@ -34,3 +38,4 @@ Meal Planner supports Django and Django_Restframework
 - configure docker images
 - configure feature branch testing
 - configure multidev sites
+- jira integration

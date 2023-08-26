@@ -1,0 +1,26 @@
+a {
+    line-height: 1;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    height: 40px;
+}
+
+img {
+    border-radius: 25px;
+    border: .5px grey solid;
+}
+
+.main-nav {
+    background-color: lightgray;
+    height: 40px;
+}
+
+.site-branding {
+    font-size: 1rem;
+    font-weight: 700;
+}
