@@ -1,2 +1,27 @@
-# to store test code not meant to go live
+# Test code not meant to go live
 /scratch
+.env
+
+# Django
+/*/*/*.log
+/*/*/*.pot
+/*/*/*.pyc
+/*/*/*/__pycache__
+/*/*/media
+
+# Database
+/*/*/data
+/*/*/db.*
+
+# Unit test / coverage reports 
+/*/*/htmlcov/ 
+/*/*/.tox/ 
+/*/*/.coverage 
+/*/*/.coverage.* 
+/*/*/.cache 
+/*/*/.pytest_cache/ 
+/*/*/nosetests.xml 
+/*/*/coverage.xml 
+/*/*/*.cover 
+/*/*/.hypothesis/ 
+
