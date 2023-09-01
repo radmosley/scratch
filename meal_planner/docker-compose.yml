@@ -1,0 +1,26 @@
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./mp_backend/data/db:/var/lib/postgresql/data
+    env_file:
+    - mp_backend/mp_backend/.env
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./mp_backend:/code
+    ports:
+      - "8000:8000"
+    env_file:
+    - mp_backend/mp_backend/.env
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    restart: "on-failure"
